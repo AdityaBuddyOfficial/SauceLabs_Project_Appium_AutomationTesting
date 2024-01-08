@@ -50,5 +50,8 @@ public class TC5_ItemCheckOutTest
                 new CheckoutOverview(driver)
                         .checkoutdone()
                         .completePurchase();
+
+                Assert.assertEquals(homeItemName,overviewItemNames,"Sauce Labs Backpack");
+                Assert.assertEquals(homeItemPrice,overviewItemPrices,"$29.99");
     }
 }
